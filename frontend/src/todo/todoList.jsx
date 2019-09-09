@@ -1,8 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import IconButton from '../template/iconButton';
 
 export default props => {
-
     const renderRows = () => {
         const list = props.list || [];
         return list.map(todo => (
@@ -16,7 +16,6 @@ export default props => {
             </tr>
         ))
     }
-
     return (
         <table className="table">
             <thead>
